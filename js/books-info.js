@@ -40,7 +40,7 @@ const foundBooksNumber = (docs,booksNumber) => {
                 <img class="m-2 p-3" src=" https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">${doc.title}</h5>
-                    <p class="card-text fw-bold">Author : ${doc.author_name}</p>
+                    <p class="card-text fw-bold">Author : ${doc.author_name ? doc.author_name : "Not found"}</p>
                     <p class="card-text fw-bold">First published : ${doc.first_publish_year ? doc.first_publish_year : "Not found"}</p>
                     <p class="card-text fw-bold">Published by : ${doc.publisher ? doc.publisher : "Not found"}</p>
                 </div>
